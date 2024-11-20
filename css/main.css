@@ -1,0 +1,212 @@
+/* Общие стили */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #90caf9;
+}
+
+
+
+header {
+display: flex;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 10px 0;
+}
+
+
+ #profile-container {
+     display: flex;
+     align-items: center;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+     margin-left: 20px;
+    border: 2px solid #90caf9;
+        border-radius: 10px;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+        padding: 10px;
+        background-color: #90caf9;
+  
+ }
+/* мигание, */
+
+.logo {
+    display: inline-block;
+
+    font-size: 50px;
+
+}
+
+.logo span {
+    animation: blink 3s linear infinite;
+
+}
+
+.logo span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.logo span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.logo span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+
+    50% {
+        opacity: 0;
+    }
+
+}
+
+
+/* мигание конец */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Центрируем */
+    width: 400px;
+    background-color: #e0f2f7;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+.modal h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.modal label {
+    margin-bottom: 5px;
+}
+
+.modal input,
+.modal textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+/* Мигающая кнопка */
+.modal button[type="submit"] {
+    padding: 12px 20px;
+    background-color: #007bff;
+  
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: blink 1s infinite;
+    /* Мигание */
+}
+
+/* Анимация мигания */
+@keyframes blink {
+    0% {
+        background-color: #007bff;
+    }
+
+    50% {
+        background-color: #0056b3;
+    }
+
+    100% {
+        background-color: #007bff;
+    }
+}
+
+
+.modal button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.modal button[type="submit"]:active {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.close-login-form,
+.close-register-form,
+.close-create-topic-form {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+/* таbлица */
+table {
+    font-family: 'Franklin Gothic Medium',
+        'Arial Narrow',
+        Arial,
+        sans-serif;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  
+    background-color: #e0f2f7;
+ 
+}
+
+th {
+    background-color: #d9edf7;
+    
+}
+
+
+
+
+
